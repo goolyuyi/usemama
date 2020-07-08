@@ -1,0 +1,85 @@
+{
+  "name": "usemama",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "useful hooks taking care of you like your mama!",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "goolyuyi",
+  "bugs": {
+    "url": ""
+  },
+  "main": "./src/module.js",
+  "main:src": "./src/module.js",
+  "browser": "./lib/usemama.min.js",
+  "files": [
+    "lib/*",
+    "src/*",
+    "public/*"
+  ],
+  "peerDependencies": {
+    "react": "16.x",
+    "react-dom": "16.x"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/polyfill": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "@goolyuyi/react-scripts": "3.4.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "autoprefixer": "^9.8.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-syntax-async-functions": "^6.13.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.2",
+    "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.2",
+    "depcheck": "^0.9.2",
+    "eslint": "^7.3.0",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.0.0-beta.11",
+    "iconfont-webpack-plugin": "^4.2.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "postcss-normalize": "^9.0.0",
+    "terser-webpack-plugin": "^3.0.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "worker-loader": "^2.0.0"
+  },
+  "scripts": {
+    "lib": "env NODE_ENV=production webpack --config webpack/webpack.config.lib.js --progress"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">1%",
+      "not dead",
+      "not op_mini all",
+      "not IE>9"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
