@@ -7,7 +7,7 @@ function passThroughReducer(states, action) {
 export default function useAsyncReducer(asyncReducer, initState, initialAction) {
     const [states, dispatch] = useReducer(passThroughReducer, initState, initialAction);
     const awaitDispatch = async (action) => {
-        const res = await asyncReducer(states, action);
+        const res = await asyncReducer(states, action,dispatch);
         dispatch(res);
     }
     return [states, awaitDispatch]
